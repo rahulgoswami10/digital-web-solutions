@@ -26,3 +26,19 @@ document.querySelectorAll('.card').forEach(card => {
     card.style.boxShadow = 'none';
   });
 });
+
+
+
+  const navToggle = document.getElementById("navToggle");
+  const navLinks = document.querySelector(".nav-links");
+  const navItems = navLinks.querySelectorAll("a");
+
+  navToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
+  });
+
+  navItems.forEach(item => {
+    item.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });

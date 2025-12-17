@@ -21,13 +21,16 @@
              <img src="./assets/logo.png" alt="Digital Edge Solutions Logo" height="45px">
             <div class="nav-links">
               <a href="#">Home</a>
-              <a href="#">About Us</a>
-              <a href="#">Services</a>
-              <a href="#">Portfolio</a>
-              <a href="#">Career</a>
+              <a href="#about">About Us</a>
+              <a href="#service">Services</a>
+              <a href="#portfolio">Portfolio</a>
+              <a href="#career">Career</a>
             </div>
             <a class="btn" href="#contact">Contact Us <i class="uil uil-arrow-up-right"></i></a>
             <!-- <i class="uil uil-twitter"></i> -->
+            <div class="nav-toggle" id="navToggle">
+                <i class="uil uil-bars"></i>
+            </div>
         </nav>
 
         <!-- hero -->
@@ -49,7 +52,7 @@
     </header>
 
     <!--============= Why join us section =============-->
-    <div class="why">
+    <div class="why" id="about">
         <section class="section">
             <h2>Why Join Us?</h2>
             <div class="cards">
@@ -72,7 +75,7 @@
         </section>
 
         <!--============= Meet our team section =============-->
-        <section class="section">
+        <section class="section" id="service">
             <h2>Meet Our Team</h2>
             <div class="team">
                 <div class="member">
@@ -116,7 +119,7 @@
     </div>
 
   <!--============= Hiring Process section =============-->
-  <section class="section process">
+  <section class="section process" id="portfolio">
     <h2>Our Hiring Process</h2>
     <p class="pointer">
       Our Simple 4-Step Hiring Process &nbsp;<span class="material-symbols-outlined">arrow_right_alt</span>
@@ -124,25 +127,33 @@
     <div class="steps">
       <div class="step">
         <!-- <span>1</span> -->
-         <img src="./assets/resume.png" alt="" height="140px">
+         <div class="icon-wrapper">
+            <img src="./assets/resume.png" alt="" height="140px">
+         </div>
         <p>Apply</p>
         <span>Submit your application and resume</span>
       </div>
       <div class="step">
         <!-- <span>2</span> -->
-        <img src="./assets/eye.png" alt="" height="140px">
+         <div class="icon-wrapper">
+            <img src="./assets/eye.png" alt="" height="140px">
+         </div>
         <p>Review & Screening</p>
         <span>Our team will review your skills and experience</span>
       </div>
       <div class="step">
         <!-- <span>3</span> -->
-        <img src="./assets/interview.png" alt="" height="140px">
+         <div class="icon-wrapper">
+            <img src="./assets/interview.png" alt="" height="140px">
+         </div>
         <p>Interview</p>
         <span>Meet with the hiring manager and team members</span>
       </div>
       <div class="step">
         <!-- <span>4</span> -->
-        <img src="./assets/onboard.png" alt="" height="140px">
+         <div class="icon-wrapper">
+            <img src="./assets/onboard.png" alt="" height="140px">
+         </div>
         <p>Offer & Onboarding</p>
         <span>Welcome to the team</span>
       </div>
@@ -150,8 +161,43 @@
   </section>
 
   <!--===================== Current Opportunities section =====================-->
-  <section class="section jobs">
+  <section class="section jobs" id="career">
     <h2>Current Opportunities</h2>
+    <!-- job-filters -->
+     <section class="job-filters">
+        <select>
+          <option selected disabled>Choose Department</option>
+          <option>Technology</option>
+          <option>Marketing</option>
+          <option>Design</option>
+          <option>HR</option>
+        </select>
+
+        <select>
+          <option selected disabled>Choose Job Type</option>
+          <option>Full Time</option>
+          <option>Part Time</option>
+          <option>Internship</option>
+          <option>Contract</option>
+        </select>
+
+        <select>
+          <option selected disabled>Choose Location</option>
+          <option>Kolkata</option>
+          <!-- <option>Bangalore</option> -->
+          <option>Remote</option>
+        </select>
+
+        <div class="remote-toggle">
+          <span>Remote Only</span>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+          </label>
+        </div>
+  </section>
+
+
     <p class="pointer">
       Technology & Innovation Centre &nbsp;<span class="material-symbols-outlined">arrow_right_alt</span>
     </p>
@@ -316,9 +362,10 @@
   <div class="footer-bottom">
       <p>Copyright © 2025 Designed & Developed by Digital Edge Solutions</p>
       <div class="links">
-        <a href="#">Terms of Service</a>
+        <a href="#">Terms of Service</a>  
         <a href="#">Privacy & Policy</a>
       </div>
   </div>
+  <script src="main.js"></script>
 </body>
 </html>
