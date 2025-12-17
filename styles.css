@@ -358,10 +358,21 @@ a {
     color:#475569
 }
 
+.job span {
+    color: (--muted);
+    font-size: .8rem;
+}
+
 .job a {
     display:inline-block;
     margin-top:12px;
-    font-weight:600
+    font-weight:600;
+    font-size: .86rem;
+    color: var(--gold);
+}
+
+.job a:hover {
+    color: var(--blue);
 }
 
 .msg > h3 {
