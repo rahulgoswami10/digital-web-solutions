@@ -11,6 +11,9 @@
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
   <!--============ css stylesheet cdn ============-->
   <link rel="stylesheet" href="./styles.css">
+  <!--============ Aos cdn link ============-->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
 </head>
 <body>
     <!--============= Header =============-->
@@ -20,7 +23,7 @@
             <!-- <strong>Digital Edge Solutions</strong> -->
              <img src="./assets/logo.png" alt="Digital Edge Solutions Logo" height="45px">
             <div class="nav-links">
-              <a href="#">Home</a>
+              <a href="#home">Home</a>
               <a href="#about">About Us</a>
               <a href="#service">Services</a>
               <a href="#portfolio">Portfolio</a>
@@ -34,19 +37,22 @@
         </nav>
 
         <!-- hero -->
-        <section class="hero">
+        <section class="hero" data-aos="fade" id="home">
             <div class="hero-content">
                 <h1>Careers</h1>
             </div>
             <div class="hero-strip">
               <div class="hero-strip-inner">
                 <strong>Build Your Future with Digital Edge Solutions</strong><br>
-                <!-- <p> -->
                   Are you passionate about web development, digital marketing, and creative innovation? 
                   At Digital Edge Solution, we are always looking for talented and driven individuals to 
                   join our team.
-                <!-- </p> -->
               </div>
+            </div>
+            <div class="cta">
+                <a href="#contact"> &nbsp;
+                  Get Quote <span class="material-symbols-outlined">arrow_right_alt</span>
+                </a>
             </div>
         </section>
     </header>
@@ -56,17 +62,17 @@
         <section class="section">
             <h2>Why Join Us?</h2>
             <div class="cards">
-                <div class="card">
+                <div class="card" data-aos="fade-right">
                   <img src="./assets/Arrowright.png" alt="">
                   <h3>Growth & Learning</h3>
                   <p>Opportunities for training, mentorship and certifications.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-up">
                   <img src="./assets/Arrowright.png" alt="">
                   <h3>Work-Life Balance</h3>
                   <p>Flexible hours, remote work options, generous PTO.</p>
                 </div>
-                <div class="card">
+                <div class="card" data-aos="fade-left">
                   <img src="./assets/Arrowright.png" alt="">
                   <h3>Impactful Work</h3>
                   <p>Work on cutting-edge projects and make a real difference.</p>
@@ -78,7 +84,7 @@
         <section class="section" id="service">
             <h2>Meet Our Team</h2>
             <div class="team">
-                <div class="member">
+                <div class="member" data-aos="fade-up">
                     <img src="https://randomuser.me/api/portraits/men/32.jpg">
                     <h4>Harsh Jha</h4>
                     <span>Frontend Developer</span>
@@ -87,7 +93,7 @@
                        <a href=""><i class="uil uil-twitter"></i></a>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member" data-aos="fade-down">
                     <img src="https://randomuser.me/api/portraits/women/44.jpg">
                     <h4>Harsh Jha</h4>
                     <span>Frontend Developer</span>
@@ -96,7 +102,7 @@
                        <a href=""><i class="uil uil-twitter"></i></a>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member" data-aos="fade-up">
                     <img src="https://randomuser.me/api/portraits/men/54.jpg">
                     <h4>Harsh Jha</h4>
                     <span>Frontend Developer</span>
@@ -105,7 +111,7 @@
                        <a href=""><i class="uil uil-twitter"></i></a>
                     </div>
                 </div>
-                <div class="member">
+                <div class="member" data-aos="fade-down">
                     <img src="https://randomuser.me/api/portraits/women/68.jpg">
                     <h4>Harsh Jha</h4>
                     <span>Frontend Developer</span>
@@ -125,7 +131,7 @@
       Our Simple 4-Step Hiring Process &nbsp;<span class="material-symbols-outlined">arrow_right_alt</span>
     </p>
     <div class="steps">
-      <div class="step">
+      <div class="step" data-aos="slide-left">
         <!-- <span>1</span> -->
          <div class="icon-wrapper">
             <img src="./assets/resume.png" alt="" height="140px">
@@ -133,7 +139,7 @@
         <p>Apply</p>
         <span>Submit your application and resume</span>
       </div>
-      <div class="step">
+      <div class="step" data-aos="slide-right">
         <!-- <span>2</span> -->
          <div class="icon-wrapper">
             <img src="./assets/eye.png" alt="" height="140px">
@@ -141,7 +147,7 @@
         <p>Review & Screening</p>
         <span>Our team will review your skills and experience</span>
       </div>
-      <div class="step">
+      <div class="step" data-aos="slide-left">
         <!-- <span>3</span> -->
          <div class="icon-wrapper">
             <img src="./assets/interview.png" alt="" height="140px">
@@ -149,7 +155,7 @@
         <p>Interview</p>
         <span>Meet with the hiring manager and team members</span>
       </div>
-      <div class="step">
+      <div class="step" data-aos="slide-right">
         <!-- <span>4</span> -->
          <div class="icon-wrapper">
             <img src="./assets/onboard.png" alt="" height="140px">
@@ -202,7 +208,7 @@
       Technology & Innovation Centre &nbsp;<span class="material-symbols-outlined">arrow_right_alt</span>
     </p>
     <div class="job-list">
-      <div class="job"> 
+      <div class="job" data-aos="fade-right"> 
         <h4>Android Developer</h4>
         <p>Kolkata, India</p>
         <span>
@@ -211,7 +217,7 @@
         </span><br> 
         <a href="#">More Details →</a>
       </div>
-      <div class="job">
+      <div class="job" data-aos="fade-up">
         <h4>DevOps Engineer</h4>
         <p>Kolkata, India</p>
         <span>
@@ -219,7 +225,7 @@
           &nbsp;We're seeking a passionate and skilled <span class="highlight">DevOps</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
         </span><br> 
         <a href="#">More Details →</a></div>
-      <div class="job">
+      <div class="job" data-aos="fade-left">
         <h4>Digital Marketing Executive</h4>
         <p>Kolkata, India</p>
         <span>
@@ -241,7 +247,7 @@
     <div class="get">
       <h3>Get in touch</h3>
         <!-- detail 1 -->
-        <div class="contact-detail">
+        <div class="contact-detail" data-aos="fade-up">
             <h4><i class="uil uil-map-pin"></i>  Head Office</h4>
             <p>
               East tower 10es2 mani casadona 11f, <br> 04 street number 372 action area 1 2g <br>
@@ -249,20 +255,20 @@
             </p>
         </div>
         <!-- detail 2 -->
-        <div class="contact-detail">
+        <div class="contact-detail" data-aos="fade-up">
             <h4><i class="uil uil-envelope"></i> Email Us</h4>
             <p>
               Des@gmailc.com
             </p>
         </div>
         <!-- detail 3 -->
-        <div class="contact-detail"> 
+        <div class="contact-detail" data-aos="fade-up"> 
             <h4><i class="uil uil-phone"></i> Call Us</h4>
             <p>(+91) 79 800 32727</p>
             <p>(+91) 83 368 74006</p>
         </div>
         <!-- detail 4 -->
-        <div class="contact-detail">
+        <div class="contact-detail" data-aos="fade-up">
           <h4>Follow our social media</h4>
           <div class="socials">
             <a href="https://x.com/" target="_blank"><i class="uil uil-twitter"></i></a>
@@ -295,7 +301,7 @@
     <div class="footer-overlay"></div>
     <div class="footer-container">
 
-      <div class="footer-col brand">
+      <div class="footer-col brand" data-aos="fade-right">
         <div class="logo">
           <img src="./assets/logo.png" alt="Digital Edge Solutions" / height="40px">
           <!-- <span>Digital Edge Solutions</span> -->
@@ -305,7 +311,7 @@
         <li><i class="uil uil-envelope"></i> smartthabit@gmail.com</li>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col" data-aos="fade-left">
         <h4>Product</h4>
         <ul>
           <li><a href="#">Features</a></li>
@@ -316,7 +322,7 @@
         </ul>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col" data-aos="fade-right">
         <h4>Company</h4>
         <ul>
           <li><a href="#">About Us</a></li>
@@ -327,7 +333,7 @@
         </ul>
       </div>
 
-      <div class="footer-col">
+      <div class="footer-col" data-aos="fade-left">
         <h4>Resources</h4>
         <ul>
           <li><a href="#">Help Center</a></li>
@@ -341,7 +347,7 @@
         </div>
       </div>
 
-      <div class="footer-col newsletter">
+      <div class="footer-col newsletter" data-aos="zoom-in">
         <h4>Subscribe Our Newsletters</h4>
         <div class="newsletter-box">
           <input type="email" placeholder="Email" />
@@ -367,5 +373,15 @@
       </div>
   </div>
   <script src="main.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-out-cubic',
+      once: true,
+      offset: 80
+    });
+  </script>
+
 </body>
 </html>

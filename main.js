@@ -42,3 +42,25 @@ document.querySelectorAll('.card').forEach(card => {
       navLinks.classList.remove("active");
     });
   });
+
+
+
+
+    if (window.innerWidth <= 768) {
+
+    document.querySelectorAll('.job').forEach(job => {
+      const text = job.querySelector('span');
+      const link = job.querySelector('a');
+
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        text.classList.toggle('expanded');
+
+        link.innerText = text.classList.contains('expanded')
+          ? 'Read Less ←'
+          : 'Read More →';
+      });
+    });
+
+  }
