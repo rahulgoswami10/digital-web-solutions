@@ -68,6 +68,8 @@ a {
     align-items: center;
 }
 
+/*================= header part =================*/
+
 .header {
     /* background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d'); */
     background:url('./assets/header.jpeg');
@@ -150,7 +152,7 @@ a {
     font-weight:600;
 }
 
-/* HERO */
+/*=============== HERO part ===============*/
 .hero{
     /* background:url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') center/cover no-repeat; */
     /* min-height:70vh; */
@@ -1060,6 +1062,24 @@ footer {
         border-radius: 0px;
     }
 
+    .navbar img {
+        height: 40px;
+    }
+
+    .nav-links {
+        /* width: 160px; */
+        border-radius: 0px;
+        /* margin-top: 1rem;
+        margin: 1rem auto; */
+        /* height: 75vh; */
+        /* justify-content: center;
+        align-items: center; */
+        background: hsla(0 10% 20% / .1);
+        backdrop-filter: blur(.75rem);
+        /* color: #fff; */
+        /* transition: all 300ms ease; */
+    }
+
     .team {
         /* gap: 2rem; */
     }
@@ -1132,21 +1152,26 @@ footer {
     }
 
     .footer-col h4 {
-        font-size: 1.18rem;
+        font-size: 1.15rem;
         color: var(--gold);
     }
 
     .footer-col a {
-        font-size: 1.12rem;
+        font-size: 1.1rem;
     }
 
     .footer-col .social {
         /* justify-content: center; */
         justify-content: left;
+        gap: 2.5px;
     }
 
     .footer-col .social a {
-        font-size: 1.18rem;
+        font-size: 1.12rem;
+    }
+
+    .footer-col .social i {
+        padding: .4rem .55rem;
     }
 
     .footer-bottom { 
