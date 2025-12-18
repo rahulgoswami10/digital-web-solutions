@@ -79,10 +79,10 @@ a {
     /* background-repeat: 400%; */
     background-repeat: no-repeat;
     /* min-height: 92vh; */
-    min-height: auto;
+    /* min-height: auto; */
     display: flex;
     /* justify-content: center; */
-    align-items: center;
+    /* align-items: center; */
     flex-direction: column;
     /* gap: 5rem; */
 }
@@ -169,6 +169,7 @@ a {
     /* background: var(--gold); */
     justify-content: flex-end;
     margin-top: 0;
+    min-height: 70vh;
     /* margin-top: 10%; */
     /* align-items:flex-end; */
     /* align-items: center; */
@@ -839,11 +840,11 @@ footer {
         background-position: left;
         background-size: cover;
         background-repeat: no-repeat;
-        min-height: 78vh;
+        /* min-height: 78vh; */
     }
 
     .navbar {
-        position: fixed;
+        /* position: fixed; */
         max-width: 100%;
         border-radius: 0;
         top: 0;
@@ -872,12 +873,12 @@ footer {
     }
 
     .hero {
-        width: 90%;
+        /* width: 90%; */
     }
 
     .hero-strip {
-        width: 88.5%;
-        border-radius: 10px;
+        /* width: 88.5%;
+        border-radius: 10px; */
     }
 
     .hero-strip-inner {
@@ -900,6 +901,10 @@ footer {
         padding: .65rem 1rem;
     }
 
+    .team {
+        gap: 4rem;
+    }
+
     .cards,
     .team,
     .steps,
@@ -911,12 +916,12 @@ footer {
 
 @media (max-width: 992px) {
     .team {
-        gap: 4rem;
+        /* gap: 4rem; */
     }
       .navbar {
-        width: calc(100% - 32px);
+        /* width: calc(100% - 32px); */
         padding: 14px 20px;
-        border-radius: 16px;
+        /* border-radius: 16px; */
     }
 
     /* .navbar::after {
@@ -988,7 +993,7 @@ footer {
         background-repeat: no-repeat;
     }
     .hero {
-        min-height: auto;
+        /* min-height: auto; */
     }
 
     .hero-strip {
@@ -1074,7 +1079,7 @@ footer {
 
 @media (max-width: 576px) {
     .header {
-        min-height: 82vh;
+        /* min-height: 82vh; */
     }
 
     .navbar {
