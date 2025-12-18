@@ -329,6 +329,10 @@ a {
     border-radius: 50%;
 }
 
+.member .socials i:hover {
+    color: var(--muted);
+}
+
 /* HIRING PROCESS */
 .process {
     background:#fff;
@@ -1056,6 +1060,14 @@ footer {
 
     .fr {
         margin-top: 1rem;
+    }
+
+    .member {
+        background-color: hsla(0 10% 20% / .1);
+        backdrop-filter: blur(.45rem);
+        border: 1.25px solid lightgrey;
+        padding: 1.7rem 1rem;
+        border-radius: 10px;
     }
 
     .job span {
