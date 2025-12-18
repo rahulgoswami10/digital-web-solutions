@@ -158,12 +158,12 @@ a {
     /* min-height:70vh; */
     /* max-width: max-content; */
     width: 100%;
-    /* position:relative; */
+    position:relative;
     display:flex;
     flex-direction: column;
     /* background: var(--gold); */
     justify-content: flex-end;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     /* align-items:flex-end; */
     /* align-items: center; */
 }
@@ -202,7 +202,8 @@ a {
 .hero-strip{
     width: 100%;
     background: var(--gold);
-    padding: 32px 0;
+    /* padding: 32px 0; */
+    padding: 16px 0;
     /* padding: 120px 5% 40px; */
     /* margin-top: 22px; */
 }
