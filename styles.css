@@ -580,7 +580,9 @@ a {
     display:grid;
     grid-template-columns:1fr 1fr;
     /* place-items: center; */
-    margin: 4rem;
+    /* margin: 4rem;
+    margin-left: 8rem; */
+    margin: auto;
     /* gap:48px; */
     gap: 16px;
     box-shadow: 1px 3.5px 9px rgba(0, 0, 0, .1);
