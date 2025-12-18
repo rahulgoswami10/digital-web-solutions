@@ -227,9 +227,10 @@ a {
     background-position: center;
 }
 
-.section{padding:80px 48px;
+.section{
+    padding:80px 48px;
     max-width:1200px;
-    margin:auto
+    margin:auto;
 }
 
 .section h2 {
@@ -565,6 +566,7 @@ a {
     padding:36px 64px 42px;
     display:grid;
     grid-template-columns:1fr 1fr;
+    /* place-items: center; */
     margin: 4rem;
     /* gap:48px; */
     gap: 16px;
