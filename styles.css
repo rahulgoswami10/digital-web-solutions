@@ -1074,8 +1074,8 @@ footer {
         /* height: 75vh; */
         /* justify-content: center;
         align-items: center; */
-        background: hsla(0 10% 20% / .1);
-        backdrop-filter: blur(.75rem);
+        /* background: hsla(0 10% 20% / .1);
+        backdrop-filter: blur(.75rem); */
         /* color: #fff; */
         /* transition: all 300ms ease; */
     }
