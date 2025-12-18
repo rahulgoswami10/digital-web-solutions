@@ -29,23 +29,24 @@ document.querySelectorAll('.card').forEach(card => {
 });
 
 
-  // Navtoggle for tablets and smaller devices
-  const navToggle = document.getElementById("navToggle");
-  const navLinks = document.querySelector(".nav-links");
-  const navItems = navLinks.querySelectorAll("a");
 
-  navToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
+// Navtoggle for tablets and smaller devices
+const navToggle = document.getElementById("navToggle");
+const navLinks = document.querySelector(".nav-links");
+const navItems = navLinks.querySelectorAll("a");
+
+navToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+navItems.forEach(item => {
+  item.addEventListener("click", () => {
+    navLinks.classList.remove("active");
   });
-
-  navItems.forEach(item => {
-    item.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-    });
-  });
+});
 
 
-  // Filter logic
+// Filter logic
 document.addEventListener('DOMContentLoaded', () => {
   const departmentSelect = document.getElementById('departmentFilter');
   const jobs = document.querySelectorAll('.job');
@@ -71,24 +72,40 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+// Read more logic shrink & expand logic
+if (window.innerWidth <= 768) {
 
+  document.querySelectorAll('.job').forEach(job => {
+    const text = job.querySelector('span');
+    const link = job.querySelector('a');
 
-    // Read more logic shrink & expand logic
-    if (window.innerWidth <= 768) {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
 
-    document.querySelectorAll('.job').forEach(job => {
-      const text = job.querySelector('span');
-      const link = job.querySelector('a');
+      text.classList.toggle('expanded');
 
-      link.addEventListener('click', (e) => {
-        e.preventDefault();
-
-        text.classList.toggle('expanded');
-
-        link.innerText = text.classList.contains('expanded')
-          ? 'Read Less ←'
-          : 'Read More →';
-      });
+      link.innerText = text.classList.contains('expanded')
+        ? 'Read Less ←'
+        : 'Read More →';
     });
+  });
 
-  }
+}
+
+
+// Thank you modal
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+  const modal = document.getElementById("thankYouModal");
+  const closeBtn = document.getElementById("closeModal");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    modal.classList.add("active");
+    form.reset();
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+});
