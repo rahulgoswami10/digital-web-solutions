@@ -171,12 +171,12 @@
     <h2>Current Opportunities</h2>
     <!-- job-filters -->
      <section class="job-filters">
-        <select>
-          <option selected disabled>Choose Department</option>
-          <option>Technology</option>
-          <option>Marketing</option>
-          <option>Design</option>
-          <option>HR</option>
+        <select id="departmentFilter">
+          <option selected value="all">Choose Department</option>
+          <option value="technology">Technology</option>
+          <option value="marketing">Marketing</option>
+          <option value="design">Design</option>
+          <option value="hr">HR</option>
         </select>
 
         <select>
@@ -208,7 +208,8 @@
       Technology & Innovation Centre &nbsp;<span class="material-symbols-outlined">arrow_right_alt</span>
     </p>
     <div class="job-list">
-      <div class="job" data-aos="fade-right"> 
+      <!-- andriod dev -->
+      <div class="job" data-aos="fade-right" data-department="technology"> 
         <h4>Android Developer</h4>
         <p>Kolkata, India</p>
         <span>
@@ -217,15 +218,20 @@
         </span><br> 
         <a href="#">More Details →</a>
       </div>
-      <div class="job" data-aos="fade-up">
+
+      <!-- devops eng -->
+      <div class="job" data-aos="fade-up" data-department="technology">
         <h4>DevOps Engineer</h4>
         <p>Kolkata, India</p>
         <span>
           <strong>Job Summary:</strong> 
           &nbsp;We're seeking a passionate and skilled <span class="highlight">DevOps</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
         </span><br> 
-        <a href="#">More Details →</a></div>
-      <div class="job" data-aos="fade-left">
+        <a href="#">More Details →</a>
+      </div>
+
+      <!-- digital marketing exe -->
+      <div class="job" data-aos="fade-left" data-department="marketing">
         <h4>Digital Marketing Executive</h4>
         <p>Kolkata, India</p>
         <span>
@@ -237,9 +243,11 @@
     </div>
   </section>
 
+
   <div class="msg">
     <h3>Don't See Your Role? Submit A General Application to Our mail <span class="highlight">@gmail.com</span></h3>
   </div>
+
 
   <!--===================== Contact section =====================-->
   <section id="contact" class="contact">
@@ -372,7 +380,10 @@
         <a href="#">Privacy & Policy</a>
       </div>
   </div>
+  <!-- js file cdn -->
   <script src="main.js"></script>
+
+  <!-- aos js cdn -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({

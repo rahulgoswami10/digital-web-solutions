@@ -1,6 +1,6 @@
 // main.js
 
-// Example: smooth scroll to sections when navbar links are wired
+// smooth scroll to sections when navbar links are wired
 document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();
@@ -15,7 +15,8 @@ document.querySelectorAll('.nav-links a[href^="#"]').forEach(link => {
   });
 });
 
-// Example: small hover animation on cards
+
+// small hover animation on cards
 document.querySelectorAll('.card').forEach(card => {
   card.addEventListener('mouseenter', () => {
     card.style.transform = 'translateY(-6px)';
@@ -28,7 +29,7 @@ document.querySelectorAll('.card').forEach(card => {
 });
 
 
-
+  // Navtoggle for tablets and smaller devices
   const navToggle = document.getElementById("navToggle");
   const navLinks = document.querySelector(".nav-links");
   const navItems = navLinks.querySelectorAll("a");
@@ -44,8 +45,35 @@ document.querySelectorAll('.card').forEach(card => {
   });
 
 
+  // Filter logic
+document.addEventListener('DOMContentLoaded', () => {
+  const departmentSelect = document.getElementById('departmentFilter');
+  const jobs = document.querySelectorAll('.job');
+
+  departmentSelect.addEventListener('change', () => {
+    const selectedDepartment = departmentSelect.value;
+
+    jobs.forEach(job => {
+      const jobDepartment = job.dataset.department;
+
+      if (selectedDepartment === 'all' || jobDepartment === selectedDepartment) {
+        job.classList.remove('hide');
+      } else {
+        job.classList.add('hide');
+      }
+    });
+
+    // Refresh AOS after filtering
+    if (window.AOS) {
+      AOS.refresh();
+    }
+  });
+});
 
 
+
+
+    // Read more logic shrink & expand logic
     if (window.innerWidth <= 768) {
 
     document.querySelectorAll('.job').forEach(job => {

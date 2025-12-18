@@ -517,6 +517,15 @@ a {
     border-radius:16px;
     padding:24px;
     transition: all 200ms ease;
+    /* transition: opacity 0.3s ease, transform 0.3s ease; */
+
+}
+
+.job.hide {
+  opacity: 0;
+  transform: scale(0.95);
+  pointer-events: none;
+  display: none;
 }
 
 .job:hover {
