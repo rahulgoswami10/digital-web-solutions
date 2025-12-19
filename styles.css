@@ -103,11 +103,11 @@ a {
     max-width: 1600px;
     /* width: 800px; */
     /* position: relative; */
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     z-index: 999999;
     box-shadow: 1px 3px 9px rgba(0, 0, 0, .12);
-    top: 24px;
+    /* top: 24px; */
     left: 50%;
     transform: translateX(-50%);
 }
