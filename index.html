@@ -301,17 +301,33 @@
     </div>
 
     <!-- contact form -->
-    <form class="fr" method="" action="" id="contactForm">
+    <form class="fr" method="" action="" id="contactForm" autocomplete="off">
       <h3>Send us a message</h3>
-      <label for="">Name</label>
-      <input type="text" placeholder="Name" required>
-      <label for="">Email</label>
-      <input type="email" placeholder="Email" required>
-      <label for="">Phone</label>
-      <input type="text" placeholder="Phone">
-      <label for="">What Can Our Experts Help You with</label>
-      <textarea rows="8" placeholder="Anything that you would like to add about the project?"></textarea>
-      <button type="submit" class="submit">
+
+      <div class="form-group">
+        <!-- <label for="">Name</label> -->
+        <input type="text" name="name" id="name" placeholder="Your name*" required onkeyup="nameValid()">
+        <span id="errorName"></span>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="">Email</label> -->
+        <input type="email" name="email" id="email" placeholder="Your email*" required onkeyup="emailValid()">
+        <span id="errorEmail"></span>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="">Phone</label> -->
+        <input type="text" name="phone" id="phone" placeholder="Your phone*" required onkeyup="phoneValid()">
+        <span id="errorPhone"></span>
+      </div>
+
+      <div class="form-group">
+        <!-- <label for="">What Can Our Experts Help You with</label> -->
+        <textarea rows="8" name="msg" placeholder="Anything that you would like to add about the project?"></textarea>
+        <!-- <span id="errorName"></span> -->
+      </div>
+      <button type="submit" class="submit" id="btn">
         Submit <span class="material-symbols-outlined">arrow_right_alt</span>
       </button>
     </form>
@@ -396,6 +412,9 @@
   </div>
   <!-- js file cdn -->
   <script src="main.js"></script>
+
+  <!-- validation js file cdn -->
+   <script src="validate.js"></script>
 
   <!-- aos js cdn -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
