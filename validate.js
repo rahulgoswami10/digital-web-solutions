@@ -7,7 +7,7 @@ const nameValid = () => {
         document.getElementById("errorName").innerHTML = "";
         document.getElementById("btn").disabled = false;
     } else {
-        document.getElementById("errorName").innerHTML = "⚠️Please enter a valid name";
+        document.getElementById("errorName").innerHTML = "⚠️Please enter a valid name!";
         document.getElementById("btn").disabled = true;
     }
 }
@@ -21,7 +21,7 @@ const emailValid = () => {
         document.getElementById("errorEmail").innerHTML = "";
         document.getElementById("btn").disabled = false;
     } else {
-        document.getElementById("errorEmail").innerHTML = "⚠️Please enter a valid email";
+        document.getElementById("errorEmail").innerHTML = "⚠️Please enter a valid email!";
         document.getElementById("btn").disabled = true;
     }
 
@@ -37,7 +37,7 @@ const phoneValid = () => {
         document.getElementById("errorPhone").innerHTML = "";
         document.getElementById("btn").disabled = false;
     } else {
-        document.getElementById("errorPhone").innerHTML = "⚠️Please enter a valid phone number";
+        document.getElementById("errorPhone").innerHTML = "⚠️Please enter a valid phone number!";
         document.getElementById("btn").disabled = true;
     }
 
