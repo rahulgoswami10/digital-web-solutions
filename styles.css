@@ -733,7 +733,7 @@ a {
 .form-group span {
     color: var(--color-danger);
     font-weight: 500;
-    font-size: 1.12rem;
+    font-size: .92rem;
 }
 
 /* footer {
