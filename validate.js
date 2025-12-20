@@ -6,9 +6,11 @@ const nameValid = () => {
     if (nameRegex.test(name)) {
         document.getElementById("errorName").innerHTML = "";
         document.getElementById("btn").disabled = false;
+        document.getElementById("name").classList.remove("is-invalid");
     } else {
         document.getElementById("errorName").innerHTML = "⚠️Please enter a valid name!";
         document.getElementById("btn").disabled = true;
+        document.getElementById("name").classList.add("is-invalid");
     }
 }
 
@@ -20,9 +22,11 @@ const emailValid = () => {
     if (emailRegex.test(email)) {
         document.getElementById("errorEmail").innerHTML = "";
         document.getElementById("btn").disabled = false;
+        document.getElementById("email").classList.remove("is-invalid");
     } else {
         document.getElementById("errorEmail").innerHTML = "⚠️Please enter a valid email!";
         document.getElementById("btn").disabled = true;
+        document.getElementById("email").classList.add("is-invalid");
     }
 
 }
@@ -36,9 +40,11 @@ const phoneValid = () => {
     if (phoneRegex.test(phone)) {
         document.getElementById("errorPhone").innerHTML = "";
         document.getElementById("btn").disabled = false;
+        document.getElementById("phone").classList.remove("is-invalid");
     } else {
         document.getElementById("errorPhone").innerHTML = "⚠️Please enter a valid phone number!";
         document.getElementById("btn").disabled = true;
+        document.getElementById("phone").classList.add("is-invalid");
     }
 
 }
