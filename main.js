@@ -126,3 +126,94 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+// navigation scroll off set active
+const sections = document.querySelectorAll("section[id]");
+const navlinks = document.querySelectorAll(".nav-links a");
+
+function scrollActiveNav() {
+  let scrollY = window.pageYOffset;
+
+  sections.forEach(section => {
+    const sectionHeight = section.offsetHeight;
+    const sectionTop = section.offsetTop - 180; // navbar offset
+    const sectionId = section.getAttribute("id");
+
+    if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+      navlinks.forEach(link => link.classList.remove("active"));
+
+      const activeLink = document.querySelector(
+        `.nav-links a[href="#${sectionId}"]`
+      );
+
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    }
+  });
+}
+
+window.addEventListener("scroll", scrollActiveNav);
+
+
+
+
+
+// modals pop up open and close
+// open job modal
+function openJobModal(event) {
+  // event.preventDefault(); // 🚫 stop anchor reload
+  // document.getElementById("jobModal").style.display = "flex";
+  // document.body.style.overflow = "hidden";
+  // alert("Modal function triggered"); 
+  event.preventDefault();
+  const modal = document.getElementById("jobModal");
+  modal.style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+// close job modal
+function closeJobModal() {
+  document.getElementById("jobModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+// open apply modal
+function openApplyModal() {
+  document.getElementById("jobModal").style.display = "none";
+  document.getElementById("applyModal").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+// close apply modal
+function closeApplyModal() {
+  document.getElementById("applyModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
+// click outside to close
+window.addEventListener("click", function (e) {
+  if (e.target.classList.contains("modal-overlay")) {
+    e.target.style.display = "none";
+    document.body.style.overflow = "auto";
+  }
+});
+
+
+
+
+// parallax effect on the about page core values 
+const section = document.querySelector('.core-values-parallax');
+const bg = document.querySelector('.parallax-bg');
+const content = document.querySelector('.core-content');
+
+window.addEventListener('scroll', () => {
+  const rect = section.getBoundingClientRect();
+  const scrollPercent = rect.top / window.innerHeight;
+
+  // background moves slower
+  bg.style.transform = `translateY(${scrollPercent * 80}px)`;
+
+  // content moves slightly faster
+  content.style.transform = `translateY(${scrollPercent * -80}px)`;
+});
