@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Career At Digital Edge Solutions</title>
+  <title>DES | Career</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <!--============ material icon cdn ============-->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_right_alt" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!--============ iconScout cdn ============-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
   <!--============ css stylesheet cdn ============-->
@@ -38,11 +39,11 @@
                 </a>
              </div>
             <div class="nav-links">
-              <a href="#home">Home</a>
-              <a href="#about">About</a>
-              <a href="#service">Services</a>
-              <a href="#portfolio">Portfolio</a>
-              <a href="#career">Career</a>
+              <a href="index.html">Home</a>
+              <a href="about.html">About</a>
+              <a href="service.html">Services</a>
+              <a href="portfolio.html">Portfolio</a>
+              <a href="career.html">Career</a>
             </div>
             <a class="btn" href="#contact">Contact Us <i class="uil uil-arrow-up-right"></i></a>
             <!-- <i class="uil uil-twitter"></i> -->
@@ -186,8 +187,8 @@
   </section>
 
   <!--===================== Current Opportunities section =====================-->
-  <section class="section jobs" id="career">
-    <h2>Current Opportunities</h2>
+  <section class="section jobs">
+    <h2 class="intro">Current Opportunities</h2>
     <!-- job-filters -->
      <section class="job-filters">
         <select id="departmentFilter">
@@ -223,48 +224,168 @@
   </section>
 
 
-    <p class="pointer">
+    <p class="pointer" id="p">
       Technology & Innovation Centre &nbsp;<span class="material-symbols-outlined">arrow_right_alt</span>
     </p>
-    <div class="job-list">
-      <!-- andriod dev -->
-      <div class="job" data-aos="fade-right" data-department="technology"> 
-        <h4>Android Developer</h4>
-        <p>Kolkata, India</p>
-        <span>
-          <strong>Job Summary:</strong>
-          &nbsp;We're seeking a passionate and skilled <span class="highlight">Android Developer</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
-        </span><br> 
-        <a href="#" onclick="openJobModal(event)" class="more-details">More Details →</a>
-      </div>
 
-      <!-- devops eng -->
-      <div class="job" data-aos="fade-up" data-department="technology">
-        <h4>DevOps Engineer</h4>
-        <p>Kolkata, India</p>
-        <span>
-          <strong>Job Summary:</strong> 
-          &nbsp;We're seeking a passionate and skilled <span class="highlight">DevOps</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
-        </span><br> 
-        <a href="#" onclick="openJobModal(event)" class="more-details">More Details →</a>
-      </div>
+    <div id="jobSection">
+        <div class="job-list">
+            <!-- andriod dev -->
+            <div class="job" data-aos="fade-right" data-department="technology"> 
+              <h4>Android Developer</h4>
+              <p>Kolkata, India</p>
+              <span>
+                <strong>Job Summary:</strong>
+                &nbsp;We're seeking a passionate and skilled <span class="highlight">Android Developer</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
+              </span><br> 
+              <a href="#" onclick="openJobModal(event)" class="more-details">More Details →</a>
+            </div>
 
-      <!-- digital marketing exe -->
-      <div class="job" data-aos="fade-left" data-department="marketing">
-        <h4>Digital Marketing Executive</h4>
-        <p>Kolkata, India</p>
-        <span>
-          <strong>Job Summary</strong> 
-            We're seeking a passionate and skilled <span class="highlight">Digital Marketing Analyst</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
-        </span><br> 
-        <a href="#" onclick="openJobModal(event)" class="more-details">More Details →</a>
-      </div>
+            <!-- devops eng -->
+            <div class="job" data-aos="fade-up" data-department="technology">
+              <h4>DevOps Engineer</h4>
+              <p>Kolkata, India</p>
+              <span>
+                <strong>Job Summary:</strong> 
+                &nbsp;We're seeking a passionate and skilled <span class="highlight">DevOps</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
+              </span><br> 
+              <a href="#" onclick="openJobModal(event)" class="more-details">More Details →</a>
+            </div>
+
+            <!-- digital marketing exe -->
+            <div class="job" data-aos="fade-left" data-department="marketing">
+              <h4>Digital Marketing Executive</h4>
+              <p>Kolkata, India</p>
+              <span>
+                <strong>Job Summary</strong> 
+                  We're seeking a passionate and skilled <span class="highlight">Digital Marketing Analyst</span> to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric <span class="highlight">Android applications</span> for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
+              </span><br> 
+              <a href="#" onclick="openJobModal(event)" class="more-details">More Details →</a>
+            </div>
+        </div>
     </div>
   </section>
 
 
+  <!-- job description model  -->
+  <div class="modal-overlay section" id="jobModal">
+        <div class="modal modal-dark">
+            <button class="close-btn" onclick="closeJobModal()">
+              <span class="material-icons">west</span>
+            </button>
+          
+            <div class="job-header">
+              <div class="header-content">
+                <h2>Remote Android Developer</h2>
+                <button class="apply-btn" onclick="openApplyModal()">Apply Now</button>
+              </div>
+              <div class="header-info">
+                <p>Location: Kolkata</p>
+                <p>Type: Full Time</p>
+              </div>
+              <!-- <p>Location: Kolkata</p>
+              <p>Type: Full Time</p> -->
+              <!-- <p>Department: Backend</p> -->
+            </div>
+
+            <!-- <p>Location: Kolkata</p>
+            <p>Type: Full Time</p>
+            <p>Department: Backend</p> -->
+
+            <div class="job-desc">
+              <h3>Job Description</h3>
+              <p>
+                We're seeking a passionate and skilled Android Developer to join our mobile team. You'll be responsible for the design, development, and maintenance of high-performance, user-centric Android applications for our clients. The ideal candidate has a strong understanding of the Android lifecycle, design patterns, and a commitment to writing clean, efficient code.
+                Key Responsibilities
+                <ul class="custom-list">
+                  <li>
+                    Develop and maintain robust, native Android applications using Kotlin and/or Java.
+                  </li>
+                  <li>
+                    Collaborate closely with product managers, UX/UI designers, and backend engineers to define and implement new features.
+                  </li>
+                  <li>
+                    Ensure the performance, quality, and responsiveness of applications.
+                  </li>
+                  <li>
+                    Identify and correct bottlenecks, fix bugs, and improve application stability and performance.
+                  </li>
+                  <li>
+                    Work with external data sources and APIs (RESTful, GraphQL).
+                  </li>
+                  <li>
+                    Unit-test code for robustness, including edge cases, usability, and general reliability.
+                  </li>
+                  <li>
+                    Stay up-to-date with new mobile technology trends, application architectures, and Android platform updates.
+                  </li>
+                </ul>
+              </p> <br>
+
+              <p>
+                 <strong>Required Skills & Experience: </strong>
+                 <ul class="custom-list">
+                    <li>
+                      Education: Bachelor's degree in Computer Science, Engineering, or a related field (or equivalent practical experience).
+                    </li>
+                    <li>
+                      Experience: X+ years of professional experience in native Android development. (Replace X with a specific number, e.g., 3+)
+                    </li>
+                    <li>
+                      Language Proficiency: Strong proficiency in Kotlin (preferred) and/or Java.
+                    </li>
+                    <li>
+                      Android SDK: Deep understanding of the full mobile development lifecycle and the Android SDK, including knowledge of various Android versions and screen compatibility.
+                    </li>
+                    <li>
+                      Architecture: Experience with modern Android architectural components (e.g., MVVM, MVI) and dependency injection frameworks (e.g., Dagger, Hilt, Koin).
+                    </li>
+                    <li>
+                      Version Control: Proficiency with Git and standard development workflows (e.g., pull requests, code reviews).
+                    </li>
+                    <li>
+                      Testing: Experience writing unit and integration tests (e.g., JUnit, Mockito, Espresso).
+                    </li>
+                 </ul>
+              </p> <br>
+            </div>
+        </div>
+  </div>
+
+
+  <!-- Application Form model  -->
+  <div class="modal-overlay" id="applyModal">
+    <div class="modal modal-light">
+        <button class="close-btn" onclick="closeApplyModal()"><i class="uil uil-arrow-left"></i></button>
+
+        <h2>Apply for this position</h2>
+
+        <form>
+        <div class="form-grid">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="State">
+            <input type="text" placeholder="District">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Current Position">
+            <input type="number" placeholder="Experience (years)">
+            <input type="text" placeholder="Expertise">
+            <input type="file">
+            <input type="text" placeholder="Current CTC (₹)">
+        </div>
+
+        <div class="modal-actions">
+            <button type="submit" class="btn-primary">Submit Application</button>
+            <button type="button" class="btn-secondary" onclick="closeApplyModal()">Cancel</button>
+        </div>
+        </form>
+    </div>
+  </div>
+
+
   <div class="section msg">
-    <h3>Don't See Your Role? Submit A General Application to Our mail <span class="highlight">@gmail.com</span></h3>
+    <h3>Don't See Your Role? Submit A General Application to Our mail <span class="highlight">hr@dedgesolutions.com</span></h3>
   </div>
 
 
@@ -428,11 +549,11 @@
     </div> -->
   </footer>
   <div class="footer-bottom">
-      <p>Copyright © 2025 Designed & Developed by Digital Edge Solutions</p>
-      <div class="links">
+      <p>Copyright © 2025 . <span class="highlight">Designed & Developed by Digital Edge Solutions</span></p>
+      <!-- <div class="links">
         <a href="#">Terms of Service</a>  
         <a href="#">Privacy & Policy</a>
-      </div>
+      </div> -->
   </div>
 
   <!--============= Thank You Modal =============-->
@@ -456,60 +577,6 @@
   <a href="#home" class="scroll-top" aria-label="Back to top">
     <i class="uil uil-arrow-up"></i>
   </a>
-
-
-  <!-- job description model  -->
-  <div class="modal-overlay" id="jobModal">
-        <div class="modal modal-dark">
-            <button class="close-btn" onclick="closeJobModal()">✕</button>
-
-            <div class="job-header">
-            <h2>Remote Android Developer</h2>
-            <button class="apply-btn" onclick="openApplyModal()">Apply Now</button>
-            </div>
-
-            <p><strong>Location:</strong> Kolkata</p>
-            <p><strong>Type:</strong> Full Time</p>
-            <p><strong>Department:</strong> Backend</p>
-
-            <h3>Job Description</h3>
-            <p>
-            Your job description content goes here...
-            </p>
-        </div>
-    </div>
-
-
-    <!-- Application Form model  -->
-    <div class="modal-overlay" id="applyModal">
-        <div class="modal modal-light">
-            <button class="close-btn" onclick="closeApplyModal()">✕</button>
-
-            <h2>Apply for this position</h2>
-
-            <form>
-            <div class="form-grid">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Phone">
-                <input type="text" placeholder="State">
-                <input type="text" placeholder="District">
-                <input type="text" placeholder="City">
-                <input type="text" placeholder="Current Position">
-                <input type="number" placeholder="Experience (years)">
-                <input type="text" placeholder="Expertise">
-                <input type="file">
-                <input type="text" placeholder="Current CTC (₹)">
-            </div>
-
-            <div class="modal-actions">
-                <button type="submit" class="btn-primary">Submit Application</button>
-                <button type="button" class="btn-secondary" onclick="closeApplyModal()">Cancel</button>
-            </div>
-            </form>
-        </div>
-    </div>
-
 
 
   <!-- js file cdn -->

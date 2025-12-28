@@ -166,22 +166,36 @@ function openJobModal(event) {
   // document.getElementById("jobModal").style.display = "flex";
   // document.body.style.overflow = "hidden";
   // alert("Modal function triggered"); 
-  event.preventDefault();
-  const modal = document.getElementById("jobModal");
-  modal.style.display = "flex";
-  document.body.style.overflow = "hidden";
+    event.preventDefault();
+
+    document.getElementById("jobSection").classList.add("hidden");
+    document.querySelector(".job-filters").classList.add("hidden");
+    // document.getElementsByClassName("pointer").classList.add("hidden");
+    document.getElementById("p").style.display = "none";
+    const modal = document.getElementById("jobModal");
+    modal.style.display = "block";
+    // document.body.style.overflow = "hidden";
+
+    //  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 // close job modal
 function closeJobModal() {
   document.getElementById("jobModal").style.display = "none";
-  document.body.style.overflow = "auto";
+  // document.body.style.overflow = "auto";
+  document.querySelector(".job-filters").classList.remove("hidden");
+  document.getElementById("jobSection").classList.remove("hidden");
+  document.getElementById("p").style.display = "flex";
+  // document.getElementsByClassName("pointer").classList.add("hidden");
+
+  // window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 // open apply modal
 function openApplyModal() {
   document.getElementById("jobModal").style.display = "none";
   document.getElementById("applyModal").style.display = "flex";
+  document.getElementById("jobSection").classList.add("hidden");
   document.body.style.overflow = "hidden";
 }
 
@@ -189,15 +203,16 @@ function openApplyModal() {
 function closeApplyModal() {
   document.getElementById("applyModal").style.display = "none";
   document.body.style.overflow = "auto";
+  document.getElementById("jobSection").classList.remove("hidden");
 }
 
 // click outside to close
-window.addEventListener("click", function (e) {
-  if (e.target.classList.contains("modal-overlay")) {
-    e.target.style.display = "none";
-    document.body.style.overflow = "auto";
-  }
-});
+// window.addEventListener("click", function (e) {
+//   if (e.target.classList.contains("modal-overlay")) {
+//     e.target.style.display = "none";
+//     document.body.style.overflow = "auto";
+//   }
+// });
 
 
 
@@ -217,3 +232,30 @@ window.addEventListener('scroll', () => {
   // content moves slightly faster
   content.style.transform = `translateY(${scrollPercent * -80}px)`;
 });
+
+
+
+
+
+  const journey = document.querySelector(".journey");
+  const journeyBg = document.querySelector(".journey-bg");
+  const journeyContent = document.querySelector(".journey-content");
+
+  function parallaxScroll() {
+    const rect = journey.getBoundingClientRect();
+    const windowHeight = window.innerHeight;
+
+    if (rect.bottom > 0 && rect.top < windowHeight) {
+      const scrollProgress = (windowHeight - rect.top) / (windowHeight + rect.height);
+
+      // Background moves slower
+      journeyBg.style.transform = `translateY(${scrollProgress * 80}px)`;
+
+      // Content moves slightly faster
+      journeyContent.style.transform = `translateY(${scrollProgress * -80}px)`;
+    }
+
+    requestAnimationFrame(parallaxScroll);
+  }
+
+  requestAnimationFrame(parallaxScroll);
