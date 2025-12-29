@@ -270,16 +270,23 @@ window.addEventListener('scroll', () => {
 
 
 
-  // FAQ toggle animation
-  
-  const faqItems = document.querySelectorAll(".faq-item");
+// FAQ toggle animation
 
-  faqItems.forEach(item => {
-    const btn = item.querySelector(".faq-question");
+document.querySelectorAll(".faq-question").forEach(button => {
+  button.addEventListener("click", () => {
+    const faqItem = button.parentElement;
 
-    btn.addEventListener("click", () => {
-      faqItems.forEach(i => i.classList.remove("active"));
-      item.classList.toggle("active");
+    // close other open FAQs (optional but professional)
+    document.querySelectorAll(".faq-item").forEach(item => {
+      if (item !== faqItem) {
+        item.classList.remove("active");
+      }
     });
+
+    // toggle current
+    faqItem.classList.toggle("active");
   });
+});
+
+
 

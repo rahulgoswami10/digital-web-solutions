@@ -864,7 +864,7 @@
 
 
 
-/* industries section */
+/*============================== industries section ==============================*/
 .industries {
   background: #0f1115;
   color: #fff;
@@ -1236,6 +1236,7 @@
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 8px;
+  color: #000;
 }
 
 .faq-header p {
@@ -1272,6 +1273,9 @@
 }
 
 .faq-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
   /* font-size: 18px; */
   font-size: 32px;
   color: #7e7e7e;
@@ -1280,8 +1284,9 @@
 
 .faq-answer {
   max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.4s ease;
+  /* overflow: hidden; */
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  opacity: 0;
 }
 
 .faq-answer p {
@@ -1297,4 +1302,28 @@
 
 .faq-item.active .faq-toggle {
   /* transform: rotate(180deg); */
+}
+
+/* arrow visibility control */
+.arrow-circle-left {
+  display: none;
+}
+
+/* when active, swap arrows */
+.faq-item.active .arrow-circle-right {
+  display: none;
+}
+
+.faq-item.active .arrow-circle-left {
+  display: inline-block;
+  color: #000;
+}
+
+.faq-item.active .faq-answer {
+  opacity: 1;
+}
+
+.arrow-right,
+.arrow-left {
+  transition: opacity 0.2s ease;
 }
