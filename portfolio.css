@@ -2,6 +2,11 @@ body {
 
  /* background-color: #f6f6f6; */
 }
+
+.hero {
+  background: url("./assets/portfolio_header.png") center/cover no-repeat;
+}
+
 .hero-strip-inner {
     /* padding-top: 122px; */
     /* padding-top: 5rem; */

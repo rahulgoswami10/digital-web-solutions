@@ -2,7 +2,8 @@
 .hero {
   position: relative;
   min-height: 100vh;
-  background: url("./assets/hero-bg.jpg") center/cover no-repeat;
+  /* background: url("./assets/hero-bg.jpg") center/cover no-repeat; */
+  background: url("./assets/home_header.jpg") center/cover no-repeat;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -13,7 +14,7 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  /* background: rgba(0, 0, 0, 0.65); */
   z-index: 1;
 }
 
@@ -156,13 +157,14 @@
   width: 160px;
   display: block;
   color: #fff;
-  background: rgba(0, 0, 0, 0.6);
+  /* background: rgba(0, 0, 0, 0.6); */
   padding: 10px 34px;
   font-size: 11.5px;
-  /* background-color: hsla(0 10% 40% / .24);
-  backdrop-filter: blur(1rem); */
+  background-color: hsla(0 10% 80% / .24);
+  /* backdrop-filter: blur(.15rem); */
   /* padding: .6rem; */
-  border-radius: 18px;
+  border-radius: 22px;
+  border: 1.5px solid lightgrey;
 }
 
 /* Bottom Strip */
@@ -312,6 +314,7 @@
 /* ACTIONS */
 .about-actions {
   display: flex;
+  /* justify-content: center; */
   align-items: center;
   gap: 30px;
 }
@@ -337,6 +340,7 @@
 
 .call-box {
   display: flex;
+  /* justify-content: center; */
   align-items: center;
   gap: 14px;
 }
@@ -866,9 +870,10 @@
 
 /*============================== industries section ==============================*/
 .industries {
-  background: #0f1115;
+  background: #212121;
   color: #fff;
-  padding: 120px 80px;
+  /* padding: 120px 80px 0; */
+  padding: 80px 80px 0;
   position: relative;
   /* overflow: hidden; */
 }
@@ -877,7 +882,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* flex-direction: column; */
   gap: 60px;
+  /* background: #212121; */
 }
 
 /* IMAGES */
@@ -888,12 +895,15 @@
 }
 
 .industries-images img {
-  position: absolute;
+  /* position: absolute;
   bottom: 0;
-  /* max-height: 100%; */
   height: 690px;
-  width: 700px;
-  /* width: 947px; */
+  width: 700px; */
+
+  position: relative;
+  width: 520px;
+  height: auto;
+  transform: translateY(-80px);
 }
 
 .img-back {
@@ -913,7 +923,9 @@
 
 /* CONTENT */
 .industries-content {
-  width: 50%;
+  /* width: 50%; */
+  /* background-image: url("./assets/industries-bg-primary.png"); */
+
 }
 
 .industries-label {
@@ -954,9 +966,26 @@
   font-size: 14px;
 }
 
+/* .pro-cta {
+    background-image: url("./assets/industries-bg-primary.png");
+    background-size: cover;
+    background-position: center;
+} */
+
+.industries-curve {
+  height: 140px; /* depends on your PNG */
+  background-image: url("./assets/industries-bg-primary.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: top center;
+  margin-top: -1px; /* removes thin gap */
+}
+
+
 /* CTA CARD */
 .project-cta {
-  margin-top: 120px;
+  /* margin-top: 120px; */
   /* background: #1a1d23; */
   /* background: red; */
   background-image: url("./assets/industries-bg.png");
@@ -969,6 +998,11 @@
   grid-template-columns: 50% 40%;
   align-items: center;
   place-content: center;
+  /* position: absolute;
+  left: 50%;
+  bottom: -120px;
+  transform: translateX(-50%);
+  width: 80%; */
 }
 
 .cta-left {
@@ -1027,6 +1061,8 @@
   object-fit: cover;
   border-radius: 20px;
 }
+
+
 
 
 /* ===================== Testimonials Section ===================== */
