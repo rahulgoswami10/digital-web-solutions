@@ -609,6 +609,40 @@ body {
     padding: 14px 40px;
   }
 
+  .portfolio-cta {
+    background: url("./assets/portfolio-cta-bg2.jpg") left/cover no-repeat;
+    position: relative;
+    border-radius: 0;
+  }
+
+  .portfolio-cta-overlay{
+    /* position: absolute; */
+    /* inset: 0;
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 1; */
+    position: absolute;
+    inset: 0;
+    /* background: linear-gradient(
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.6)
+    ); */
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+
+    .portfolio-cta-content {
+      z-index: 10;
+    }
+
+  .portfolio-cta-content h4 {
+    color: #fff;
+  }
+
+  .portfolio-cta-btn {
+    z-index: 10;
+  }
+
+
   .testimonials {
     padding-bottom: 20px;
   }
