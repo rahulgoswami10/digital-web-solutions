@@ -611,13 +611,15 @@
   background: #ddd;
 }
 
+
+/*=========================== portfolio showcase ===========================*/
+
 .portfolio-showcase {
   /* padding: 80px 0; */
   padding: 50px 0;
   background-color: #17181A;
 }
 
-/* ---------- Portfolio Head ---------- */
 .portfolio-head {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -655,116 +657,76 @@
   cursor: default;
 }
 
+
+/* Swiper styles for portfolio slider */
+.swiper {
+  width: 100%;
+  /* height: 100%; */
+  height: auto;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+
 /* ---------- Portfolio Banner ---------- */
 .portfolio-banner {
     /* display: flex; */
     overflow: hidden;
     /* padding: 0 48px; */
     padding-top: 70px;
+    width: 100%;
+    height: auto;
 }
 
 .portfolio-banner img {
     border-radius: 24px;
-    /* height: 437px; */
-    height: 450px;
-    width: 1200px;
-    /* width: 100%; */
+    /* height: 450px;
+    width: 1200px; */
+    width: 100%;        /* Make the images fill the slide */
+    height: 350px;      /* Adjust the height to maintain aspect ratio */
+    object-fit: cover; 
 }
 
-
-/* ---------- Portfolio Grid ---------- */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  /* gap: 50px; */
-  /* padding-top: 2rem; */
-  /* padding: 0 48px; */
-  padding-top: 30px;
-}
-
-/* ---------- Portfolio Card ---------- */
-.portfolio-card {
+.portfolio-slider {
   position: relative;
-  border-radius: 24px;
-  overflow: hidden;
-  background: #fff;
+  padding-bottom: 50px;
 }
 
-/* Image Cards */
-.portfolio-card.large img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 24px;
+/* Swiper Pagination */
+.swiper-pagination {
+  text-align: center;
+  margin-top: 20px;
+  bottom: 10px !important;
 }
 
-/* Arrow Button */
-.portfolio-card .arrow {
-  position: absolute;
-  top: 25px;
-  right: 25px;
-  width: 46px;
-  height: 46px;
+.swiper-pagination-bullet {
+  background: #f2a900;  /* or your preferred color */
+  /* margin-bottom: 4rem; */
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: #f2a900; /* or your preferred color */
   border-radius: 50%;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  color: #000;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.portfolio-card .arrow:hover {
-  transform: translateY(-4px);
-}
-
-/* Text Cards */
-.portfolio-card.text {
-  /* padding: 40px; */
-  padding: 40px 20px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.portfolio-card.text p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #444;
-}
-
-/* Card Footer */
-.card-footer {
-  margin-top: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.card-footer a {
-  font-size: 16px;
-  font-weight: 600;
-  color: #000;
-  text-decoration: none;
-}
-
-.card-footer a:hover {
-  text-decoration: underline;
-}
-
-.card-footer .badge {
-  padding: 8px 14px;
-  /* border-radius: 20px; */
-  border-radius: 12px;
-  font-size: 13px;
-  /* background: #f1f1f1; */
-  background: #17181A;
-  /* color: #333; */
+  padding: 10px;
   color: #fff;
 }
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 20px;
+}
+
+/* .swiper-button-next { right: 20px; }
+.swiper-button-prev { left: 20px; } */
+
+
 
 
 /* ===============================

@@ -10,6 +10,9 @@
   <!--============ iconScout cdn ============-->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.2.0/css/line.css">
 
+  <!-- swiper js cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+
   <!--============ favicon ============-->
   <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
 
@@ -397,19 +400,35 @@
           </div>
         </div>
 
-        <!-- portfolio banner -->
-         <div class="portfolio-banner" data-aos="fade-down">
-          <img src="./assets/portfolio1.jpg" alt="project banner">
-         </div>
+        <div class="swiper portfolio-slider">
+            <div class="swiper-wrapper">
 
+              <!-- slide 1 -->
+              <div class="swiper-slide">
+                <!-- portfolio banner -->
+                <div class="portfolio-banner" data-aos="">
+                  <img src="./assets/portfolio1.jpg" alt="project banner">
+                </div>
+              </div>
 
-        <!-- portfolio banner -->
-        <div class="portfolio-banner" data-aos="fade-down">
-          <img src="./assets/portfolio2.jpg" alt="project banner">
+              <!-- slide 2 -->
+              <div class="swiper-slide">
+                <!-- portfolio banner -->
+                <div class="portfolio-banner" data-aos="">
+                  <img src="./assets/portfolio2.jpg" alt="project banner">
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Add Pagination (optional) -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation (optional) -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
 
       </section>
-
     </div>
     <!--===================== Portfolio Showcase ends =====================-->
 
@@ -866,6 +885,26 @@
       easing: 'ease-out-cubic',
       once: true,
       offset: 80
+    });
+  </script>
+
+  <!-- Include Swiper JS script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper', {
+      slidesPerView: 1,       // Display one card at a time
+      spaceBetween: 20,       // Space between the slides
+      loop: true,             // Make it loop continuously
+      pagination: {
+        el: '.swiper-pagination',  // Pagination bullets
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next', // Next button
+        prevEl: '.swiper-button-prev', // Prev button
+      },
     });
   </script>
 
