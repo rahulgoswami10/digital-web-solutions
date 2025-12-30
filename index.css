@@ -1330,3 +1330,246 @@
 .arrow-left {
   transition: opacity 0.2s ease;
 }
+
+
+
+
+
+
+
+/* ======================== HERO SECTION ======================== */
+@media (max-width: 1200px) {
+  .hero-container {
+    grid-template-columns: 1fr; /* Stack columns */
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 36px; /* Decrease font size on smaller screens */
+  }
+
+  .hero-content p {
+    font-size: 14px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-btn {
+    padding: 10px 20px;
+  }
+
+  .hero-right-content {
+    flex-direction: row; /* Allow cards to display side by side */
+    gap: 40px;
+  }
+
+  .video-card {
+    width: 100%;
+    height: 180px;
+  }
+}
+
+/* ================= ABOUT SECTION ================= */
+@media (max-width: 992px) {
+  .hero-strip {
+    gap: 40px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr; /* Stack columns */
+    gap: 40px;
+  }
+
+  .about-left .image-wrap img {
+    height: 250px;
+  }
+
+  .about-right h2 {
+    font-size: 30px;
+  }
+
+  .about-highlight h4 {
+    font-size: 18px;
+  }
+
+  .about-actions {
+    flex-direction: column;
+  }
+}
+
+/* =================== INDUSTRIES SECTION =================== */
+@media (max-width: 768px) {
+  .industries-wrapper {
+    flex-direction: column; /* Stack the content */
+    gap: 40px;
+  }
+
+  .industries-images img {
+    width: 100%;
+    transform: translateY(0px);
+  }
+
+  .industries-content {
+    text-align: center;
+  }
+
+  .industries-content h2 {
+    font-size: 32px;
+  }
+
+  .industries-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .btn-outline {
+    padding: 10px 20px;
+  }
+}
+
+/* ===================== TESTIMONIALS SECTION ===================== */
+@media (max-width: 768px) {
+  .testimonials h2 {
+    font-size: 30px;
+  }
+
+  .testimonial-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+  }
+
+  .floating-avatar {
+    width: 50px;
+    height: 50px;
+  }
+
+  .testimonial-dots {
+    gap: 6px;
+  }
+}
+
+/* ======================== FAQ SECTION ======================== */
+@media (max-width: 768px) {
+  .faq-section {
+    padding: 60px 20px;
+  }
+
+  .faq-container {
+    padding: 30px 20px;
+  }
+
+  .faq-header h2 {
+    font-size: 28px;
+  }
+
+  .faq-question {
+    font-size: 14px;
+  }
+
+  .faq-answer p {
+    font-size: 13px;
+  }
+}
+
+/* ======================== PORTFOLIO SECTION ======================== */
+@media (max-width: 768px) {
+  .portfolio-head {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .portfolio-head h3 {
+    font-size: 28px;
+  }
+
+  .portfolio-banner img {
+    height: 250px;
+  }
+
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+
+  .swiper-pagination-bullet {
+    background: #f2a900;
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    padding: 8px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 18px;
+  }
+}
+
+/* ======================= GENERAL MOBILE STYLES ======================= */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 28px;
+  }
+
+  .hero-content p {
+    font-size: 12px;
+  }
+
+  .hero-strip {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .about-right h2 {
+    font-size: 28px;
+  }
+
+  .about-highlight h4 {
+    font-size: 16px;
+  }
+
+  .about-features {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .cta-left input {
+    width: 100%;
+  }
+
+  .cta-left button {
+    width: 100%;
+  }
+
+  .portfolio-banner img {
+    height: 200px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .testimonial-card p {
+    font-size: 14px;
+  }
+
+  .testimonial-dots {
+    gap: 4px;
+  }
+
+  .faq-question {
+    font-size: 12px;
+  }
+
+  .faq-answer p {
+    font-size: 12px;
+  }
+}
