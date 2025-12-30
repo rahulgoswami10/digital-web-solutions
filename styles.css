@@ -1166,7 +1166,8 @@ footer {
 .whapp {
   position: fixed;
   bottom: 84px;
-  right: 10px;
+  /* right: 10px; */
+  right: 24px;
   width: 46px;
   height: 46px;
   /* background: var(--gold); */
@@ -1675,6 +1676,10 @@ footer {
         bottom: 18px;
         /* right: 18px; */
         right: 12px;
+    }
+
+    .whapp {
+        right: 10px;
     }
     
 }
