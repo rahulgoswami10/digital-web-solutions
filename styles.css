@@ -1165,8 +1165,8 @@ footer {
 
 .whapp {
   position: fixed;
-  bottom: 94px;
-  right: 24px;
+  bottom: 84px;
+  right: 10px;
   width: 46px;
   height: 46px;
   /* background: var(--gold); */
