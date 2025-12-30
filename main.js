@@ -114,15 +114,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Arrow scroll to top
-// const scrollBtn = document.querySelector(".scroll-top");
+const scrollBtn = document.querySelector(".scroll-top");
 
-// window.addEventListener("scroll", () => {
-//   if (window.scrollY > 300) {
-//     scrollBtn.classList.add("show");
-//   } else {
-//     scrollBtn.classList.remove("show");
-//   }
-// });
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
 
 
 

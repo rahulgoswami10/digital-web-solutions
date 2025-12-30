@@ -697,7 +697,8 @@ a {
     margin: auto;
     /* gap:48px; */
     gap: 16px;
-    box-shadow: 1px 3.5px 9px rgba(0, 0, 0, .1);
+    /* box-shadow: 1px 3.5px 9px rgba(0, 0, 0, .1); */
+    box-shadow: 6px 3.5px 19px rgba(0, 0, 0, .12);
     /* height: 320px; */
 }
 
@@ -1128,7 +1129,7 @@ footer {
 /*================ Scroll to top arrow ================*/
 .scroll-top {
   position: fixed;
-  bottom: 24px;
+  bottom: 84px;
   right: 24px;
   width: 46px;
   height: 46px;
@@ -1143,14 +1144,14 @@ footer {
   z-index: 999;
   transition: all 0.3s ease;
   text-decoration: none;
-  /* opacity: 0;
-  pointer-events: none; */
+  opacity: 0;
+  pointer-events: none;
 }
 
-/* .scroll-top.show {
+.scroll-top.show {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 
 .scroll-top i {
   font-size: 26px;
@@ -1165,7 +1166,7 @@ footer {
 
 .whapp {
   position: fixed;
-  bottom: 84px;
+  bottom: 24px;
   /* right: 10px; */
   right: 24px;
   width: 46px;
@@ -1670,7 +1671,7 @@ footer {
         font-size: 13px;
     }
 
-    .scroll-top {
+    .whapp {
         width: 42px;
         height: 42px;
         bottom: 18px;
@@ -1678,7 +1679,7 @@ footer {
         right: 12px;
     }
 
-    .whapp {
+    .scroll-top {
         right: 10px;
     }
     
