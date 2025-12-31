@@ -205,37 +205,22 @@
         </div>
 
         <!-- Stats -->
-        <!-- <div class="stats">
-          <div class="stat-box">
-            <h3>15+</h3>
-            <span>Years of Combined Team Experience</span>
+        <div class="portfolio-stats">
+          <div class="stat">
+            <h3 class="counter" data-target="100">100+</h3>
+            <p>Years of Combined Team Experience</p>
           </div>
-          <div class="stat-box">
-            <h3>30+</h3>
-            <span>Case Studies Published</span>
+          <span class="divider"></span>
+          <div class="stat">
+            <h3 class="counter" data-target="200">200+</h3>
+            <p>Case Studies Published</p>
           </div>
-          <div class="stat-box">
-            <h3>80+</h3>
-            <span>Customer Retention Rate</span>
+          <span class="divider"></span>
+          <div class="stat">
+            <h3 class="counter" data-target="100">100+</h3>
+            <p>Customer Retention Rate</p>
           </div>
-        </div> -->
-
-          <div class="portfolio-stats">
-            <div class="stat">
-              <h3 class="counter" data-target="100">100+</h3>
-              <p>Years of Combined Team Experience</p>
-            </div>
-            <span class="divider"></span>
-            <div class="stat">
-              <h3 class="counter" data-target="200">200+</h3>
-              <p>Case Studies Published</p>
-            </div>
-            <span class="divider"></span>
-            <div class="stat">
-              <h3 class="counter" data-target="100">100+</h3>
-              <p>Customer Retention Rate</p>
-            </div>
-          </div>
+        </div>
 
         <!-- Services -->
         <h3 class="services-title">Services We’re Providing to Our Customers</h3>
@@ -434,6 +419,7 @@
 
 
 
+
     <!--===================== Consultation CTA Section =====================-->
     <section class="portfolio-cta section">
       <div class="portfolio-cta-wrapper">
@@ -451,6 +437,7 @@
       </div>
     </section>
     <!--===================== Consultation CTA Section =====================-->
+
 
 
 
@@ -484,9 +471,11 @@
     </section>
     <!--===================== Industries section ends =====================-->
 
+
       <!-- <div class="curve">
         <img src="./assets/industries-bg-primary.png" alt="">
       </div> -->
+
 
     <!--===================== CTA Section =====================-->
     <div class="pro-cta">
@@ -669,6 +658,8 @@
       </div>
     </section>
     <!--===================== FAQ section ends =====================-->
+
+
 
 
   <!--===================== Contact section starts =====================-->
@@ -961,6 +952,8 @@
       pagination: {
         el: '.swiper-pagination',  // Pagination bullets
         clickable: true,
+        dynamicBullets: true,
+        dynamicMainBullets: 5,
       },
       navigation: {
         nextEl: '.swiper-button-next', // Next button

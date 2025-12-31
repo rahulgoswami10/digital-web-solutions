@@ -152,7 +152,6 @@
 }
 
 
-
 .hero-ratings span {
   width: 160px;
   display: block;
@@ -1035,9 +1034,6 @@
 
 
 
-
-
-
 /* ===================== Testimonials Section ===================== */
 
 .testimonials {
@@ -1380,6 +1376,7 @@
   } */
 }
 
+
 /* ================= ABOUT SECTION ================= */
 @media (max-width: 992px) {
   .hero-container {
@@ -1451,6 +1448,7 @@
   }
 }
 
+
 /* =================== INDUSTRIES SECTION =================== */
 @media (max-width: 768px) {
   .hero-ratings {
@@ -1458,6 +1456,17 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+  }
+
+  .portfolio-stats {
+    flex-direction: column;
+    padding: 40px;
+    margin: 2rem auto;
+    /* border: 1px solid red; */
+  }
+
+  .divider {
+    display: none;
   }
 
     .portfolio-cta-wrapper {
@@ -1613,6 +1622,12 @@
 
   .about-actions {
     flex-direction: row;
+  }
+
+  .tech-icons img {
+    width: 100%;
+    height: auto;
+    /* height: */
   }
 
 
