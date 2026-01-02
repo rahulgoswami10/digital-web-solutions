@@ -1319,6 +1319,36 @@ footer {
   box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
 
+/* Small center dot */
+/* a {
+    cursor: none;
+} */
+
+.cursor-dot {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  /* background: #7b1414; */
+  background: black;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+}
+
+/* Outer ring */
+.cursor-ring {
+  position: fixed;
+  width: 34px;
+  height: 34px;
+  border: 1.5px solid rgba(255, 200, 60, 0.6); /* yellow ring */
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background 0.2s ease;
+}
+
 
 
 /*================== Responsive media queries ==================*/
@@ -1441,6 +1471,10 @@ footer {
     .nav-links a {
         padding: 12px 0;
         display: block;
+    }
+
+    .nav-links a::after {
+        display: none;
     }
 
     /* .navbar:hover .nav-links {

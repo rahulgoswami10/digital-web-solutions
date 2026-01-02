@@ -289,3 +289,29 @@ document.querySelectorAll(".faq-question").forEach(button => {
 
 
 
+
+const dot = document.querySelector(".cursor-dot");
+const ring = document.querySelector(".cursor-ring");
+
+document.addEventListener("mousemove", (e) => {
+  dot.style.left = `${e.clientX}px`;
+  dot.style.top = `${e.clientY}px`;
+
+  ring.style.left = `${e.clientX}px`;
+  ring.style.top = `${e.clientY}px`;
+});
+
+
+document.querySelectorAll("a, button").forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    ring.style.width = "80px";
+    ring.style.height = "80px";
+    ring.style.background = "rgba(255, 200, 60, 0.25)";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    ring.style.width = "34px";
+    ring.style.height = "34px";
+    ring.style.background = "transparent";
+  });
+});
