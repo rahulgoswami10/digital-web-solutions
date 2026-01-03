@@ -80,7 +80,7 @@
   /* min-height: 100vh; */
   min-height: 92vh;
   overflow: hidden;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
   /* background: #fff; */
 }
 
@@ -204,6 +204,10 @@
     /* justify-content: space-between; */
 }
 
+.mission.section {
+  padding: 80px 48px 5px;
+}
+
 .mission-left img {
     border-radius: 16px;
     width: 100%;
@@ -237,6 +241,10 @@
     gap: 2.45rem;
 
     /* justify-content: space-between; */
+}
+
+.vision.section {
+  padding: 50px 48px 40px;
 }
 
 .vision-right img {
